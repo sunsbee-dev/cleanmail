@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cleanmail"
+version = "0.1.0"
+description = "Parse Outlook .msg email threads into structured JSON for LLM processing"
+authors = [
+    { name = "sunsbee-dev" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.8"
+dependencies = [
+    "beautifulsoup4",
+    "extract-msg",
+]
+
+[project.urls]
+Homepage = "https://github.com/sunsbee-dev/cleanmail"
