@@ -274,7 +274,7 @@ def reorder_thread(t, attachments=None):
     }
 
 
-def cleanmail(msg):
+def clear(msg):
     """
     Parse Outlook .msg file → JSON string พร้อมส่ง LLM
 

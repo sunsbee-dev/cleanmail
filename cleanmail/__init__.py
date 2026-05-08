@@ -1,1 +1,1 @@
-from .core import cleanmail
+from .core import clear
