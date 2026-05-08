@@ -303,7 +303,8 @@ def clear(msg):
 
     attachments = []
     for att in msg.attachments:
-        if att.data and att.mimetype and 'image' in att.mimetype and not att.cid:
+        if att.data and att.mimetype and 'image' in att.mimetype and not (att.cid or "").strip().replace('\x00', ''):
+            
             attachments.append({
                 "filename": (att.longFilename or att.shortFilename or "").replace('\u0000', ''),
                 "mimetype": (att.mimetype or "").replace('\u0000', ''),
