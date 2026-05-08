@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "cleanmail"
-version = "0.1.0"
+version = "0.1.1"
 description = "Parse Outlook .msg email threads into structured JSON for LLM processing"
 authors = [
     { name = "sunsbee-dev" }
