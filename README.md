@@ -31,10 +31,10 @@ pip install cleanmail
 
 ```python
 import extract_msg
-from cleanmail import cleanmail
+import cleanmail
 
 msg = extract_msg.Message("path/to/your/file.msg")
-result = cleanmail(msg)
+result = cleanmail.clear(msg)
 print(result)
 ```
 
